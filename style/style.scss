@@ -1,0 +1,110 @@
+@import 'fonts';
+@import 'reset';
+@import 'vars';
+
+body {
+  background: #45465e78;
+}
+
+.main {
+  font-family: 'Montserrat';
+  text-align: center;
+  &__title {
+    text-align: center;
+
+    font-size: 39px;
+    font-weight: 700;
+    margin: 30px 0;
+
+    @include viewport-lg {
+      font-size: 55px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+
+    @include viewport-lg {
+      font-size: 30px;
+    }
+  }
+}
+
+.container {
+  padding: 0 30px;
+  // від 0 до бескінечності
+
+  @include viewport-md {
+    // від 768 >
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @include viewport-lg {
+    // від 1024 >
+    max-width: 964px;
+  }
+
+  @include viewport-xl {
+    // від 1440 >
+    max-width: 1380px;
+  }
+
+  @include viewport-xll {
+    max-width: 1760px;
+  }
+}
+
+.multybox {
+  display: inline-block;
+  margin: 0 0 30px;
+  padding: 30px;
+  // max-width: 650px;
+  overflow: hidden;
+  background: white;
+ 
+ 
+
+  &__text {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  &__text + &__text {
+    margin: 0 0 15px 0;
+  }
+
+  &__inputsection {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+
+  &__inputsection-input {
+    width: 100px;
+    padding: 10px;
+  }
+
+  &__inputsection-myButton {
+    padding: 10px;
+    background: rgb(1, 227, 1);
+  }
+
+  &__table {
+    margin: 0 auto;
+    th,
+    td {
+      width: 35px;
+      height: 35px;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+    th {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+picture {
+  display: inline-block;
+}
+
+body {
+  background: rgba(69, 70, 94, 0.4705882353);
+}
+
+.main {
+  font-family: "Montserrat";
+  text-align: center;
+}
+.main__title {
+  text-align: center;
+  font-size: 39px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+@media screen and (min-width: 1024px) {
+  .main__title {
+    font-size: 55px;
+  }
+}
+.main__text {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 40px 0;
+}
+@media screen and (min-width: 1024px) {
+  .main__text {
+    font-size: 30px;
+  }
+}
+
+.container {
+  padding: 0 30px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 964px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1380px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1760px;
+  }
+}
+
+.multybox {
+  display: inline-block;
+  margin: 0 0 30px;
+  padding: 30px;
+  overflow: hidden;
+  background: white;
+}
+.multybox__text {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.multybox__text + .multybox__text {
+  margin: 0 0 15px 0;
+}
+.multybox__inputsection {
+  text-align: center;
+  margin: 0 0 20px;
+}
+.multybox__inputsection-input {
+  width: 100px;
+  padding: 10px;
+}
+.multybox__inputsection-myButton {
+  padding: 10px;
+  background: rgb(1, 227, 1);
+}
+.multybox__table {
+  margin: 0 auto;
+}
+.multybox__table th,
+.multybox__table td {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.multybox__table th {
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
