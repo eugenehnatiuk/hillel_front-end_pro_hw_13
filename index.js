@@ -50,3 +50,5 @@ function renderTable(num) {
 
   multybox.appendChild(table);
 }
+
+
