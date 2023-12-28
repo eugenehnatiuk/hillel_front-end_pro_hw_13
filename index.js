@@ -10,7 +10,7 @@ function getValue() {
     existingTable.remove();
   }
 
-  if (!isNaN(inputValue) && inputValue !== '') {
+  if (!isNaN(inputValue) && inputValue !== '' && Number(inputValue) > 0) {
     renderTable(parseInt(inputValue));
   } else {
     alert('Please enter valid number and Try again.');
